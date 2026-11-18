@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "where-am-i",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8765", "--directory", "C:\\Users\\JJ Choi\\Desktop\\Projects\\Where Am I"],
+      "port": 8765
+    }
+  ]
+}
