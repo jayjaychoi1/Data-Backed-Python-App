@@ -11,7 +11,6 @@ load_dotenv()
 
 LOW_STOCK_THRESHOLD = 10
 
-
 def get_engine():
     """Create and return a SQLAlchemy engine from DATABASE_URL."""
     database_url = os.getenv("DATABASE_URL")
@@ -119,7 +118,7 @@ def place_order(engine, email, product_name, quantity):
         return order.id
 
 
-# --- Stretch goals ---------------------------------------------------------
+# --- Stretch goals --------------------
 
 def low_stock_report(engine, threshold=LOW_STOCK_THRESHOLD):
     """Print every product with stock below the threshold."""
